@@ -12,16 +12,6 @@
 - `inventory/`：已复制与仅登记项目的边界说明。
 - `scripts/audit_redaction.py`：提交前敏感信息审计。
 
-## 明确排除
-
-- Codex/第三方认证文件、令牌、OAuth locks、密钥目录和真实 `config.toml` 及备份。
-- 原始 MEMORY 数据库、完整原始 `MEMORY.md`、session/history、日志、浏览器与 Computer Use 状态。
-- SQLite/WAL/SHM、设备真实配置、串口枚举结果、客户工程、构建产物和临时文件。
-- Codex 系统 Skill、插件缓存、Codex runtime、`node_modules`、虚拟环境和重复 Skill 副本。
-- 本机专用的路径映射表；恢复时必须在仓库外重建。
-
-私有仓库只降低可见性，不能代替脱敏。本仓库故意采用一次全新的 Git 历史，避免原文件历史中的秘密进入对象库。
-
 ## 恢复思路
 
 1. 审阅 `inventory/` 和各目录许可证，再选择需要恢复的组件。
@@ -40,10 +30,4 @@ python -m pip install mcp pyserial
 python .\scripts\audit_redaction.py .
 ```
 
-## 验证原则
-
-- 源码测试通过只证明快照内部行为，没有证明新机器上的 Codex 注册、OAuth 或真实硬件链路。
-- firmware MCP 的构建、烧录、启动和硬件行为是四个不同验收门槛。
-- engineering-memory 的源码与长期数据分离；本仓库不携带任何真实长期数据或数据库。
-- 第三方 Skill 的版权仍归原作者；保留其已有许可证/NOTICE，本仓库不提供统一再授权。
-
+第三方 Skill 的版权仍归原作者；保留其已有许可证/NOTICE，本仓库不提供统一再授权。
