@@ -1,0 +1,4 @@
+interface:
+  display_name: "Keil Rebuild Debug"
+  short_description: "Command-line Keil rebuild and error triage flow"
+  default_prompt: "Use $keil-rebuild-debug to rebuild this .uvprojx target and summarize blocking compile errors."

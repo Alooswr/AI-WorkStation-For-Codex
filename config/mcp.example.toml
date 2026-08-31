@@ -1,0 +1,34 @@
+# Portable template only. Replace every __PLACEHOLDER__ in a private local
+# copy. Do not commit the rendered file.
+
+[mcp_servers.firmware]
+command = "__PYTHON_EXE__"
+args = ["-m", "firmware_mcp_server"]
+
+[mcp_servers.firmware.env]
+PYTHONPATH = '__REPO_ROOT__\mcp\firmware\src'
+FIRMWARE_MCP_DEVICES_CONFIG = '__LOCAL_CONFIG_DIR__\devices.local.json'
+
+[mcp_servers.engineering_memory]
+command = "__PYTHON_EXE__"
+args = ["-m", "codex_memory_mcp"]
+required = true
+startup_timeout_sec = 90
+tool_timeout_sec = 120
+
+[mcp_servers.engineering_memory.env]
+PYTHONPATH = '__REPO_ROOT__\mcp\engineering-memory\src'
+CODEX_MEMORY_ROOT = '__LOCAL_MEMORY_ROOT__'
+CODEX_PROJECT_RESOURCE_ROOTS = '__PROJECT_RESOURCE_ROOTS_JSON__'
+CODEX_PROJECT_RESOURCE_MAX_SCAN_FILES = "50000"
+
+[mcp_servers.serial-port]
+command = "__PYTHON_EXE__"
+args = ['__REPO_ROOT__\mcp\serial-port\serial_mcp_server.py']
+
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
+
+[mcp_servers.motionsites]
+url = "__MOTIONSITES_MCP_URL__"
+

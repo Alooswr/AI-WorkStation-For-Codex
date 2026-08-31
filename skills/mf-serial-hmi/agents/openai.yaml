@@ -1,0 +1,4 @@
+﻿interface:
+  display_name: "M&F Serial HMI"
+  short_description: "VisualTFT+MCU串口屏联调与CRC排障"
+  default_prompt: "Use $mf-serial-hmi to debug M&F serial HMI frame parsing, CRC alignment, and .tftprj configuration mismatches."

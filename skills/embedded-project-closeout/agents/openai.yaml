@@ -1,0 +1,4 @@
+interface:
+  display_name: "嵌入式项目完结归档"
+  short_description: "完整构建并归档各端 APP 与 Bootloader 固件"
+  default_prompt: "Use $embedded-project-closeout to build and archive every required firmware target for this completed project."

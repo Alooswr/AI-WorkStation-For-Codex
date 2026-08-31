@@ -1,0 +1,4 @@
+interface:
+  display_name: "嘉立创 EDA 绘图"
+  short_description: "通过嘉立创官方 API 绘制、修改并验证原理图与 PCB 设计"
+  default_prompt: "Use $jlc-eda-design to 根据我的硬件需求创建并验证嘉立创 EDA 原理图。"

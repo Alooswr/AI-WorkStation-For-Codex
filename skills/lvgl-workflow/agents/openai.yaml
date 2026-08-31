@@ -1,0 +1,4 @@
+interface:
+  display_name: "LVGL Workflow"
+  short_description: "LVGL integration, build, and debug workflow"
+  default_prompt: "Use $lvgl-workflow to integrate LVGL, configure lv_conf, and debug display/input rendering issues."

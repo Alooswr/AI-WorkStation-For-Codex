@@ -1,0 +1,4 @@
+﻿interface:
+  display_name: "Embedded Skill Router"
+  short_description: "嵌入式任务skills自动选型规则"
+  default_prompt: "Use $embedded-skill-router to choose the minimal correct skill set for this task."

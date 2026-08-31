@@ -1,0 +1,4 @@
+interface:
+  display_name: "Embedded Daily Maintenance"
+  short_description: "Keil/VSCode/Git/Saleae日常维护流程"
+  default_prompt: "Use $embedded-daily-maintenance to run a pull-build-debug-push maintenance cycle for this firmware repo."

@@ -1,0 +1,34 @@
+# Private, machine-local overlays
+config/*.local.*
+config/rendered-*.toml
+devices.local.json
+.env
+.env.*
+
+# Runtime state and credentials
+auth.json
+hooks.json
+oauth-locks/
+mcp-oauth-locks/
+secrets/
+credentials.local.json
+*.secret
+*.token
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.log
+
+# Build/dependency caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+node_modules/
+*.egg-info/
+dist/
+build/

@@ -1,0 +1,4 @@
+﻿interface:
+  display_name: "ESP-IDF Workflow"
+  short_description: "Windows ESP-IDF v6 setup, build, flash, and triage"
+  default_prompt: "Use $esp-idf-workflow to set up, build, flash, and debug an ESP-IDF project on Windows with idf.py."

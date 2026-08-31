@@ -1,0 +1,54 @@
+{
+  "devices": [
+    {
+      "device_id": "demo-keil",
+      "framework": "keil",
+      "keil": {
+        "project_root": "C:\\path\\to\\keil-project",
+        "uv4_path": "C:\\Keil_v5\\UV4\\UV4.exe",
+        "project_file": "project\\MDK_V5\\Demo.uvprojx",
+        "target": "DemoTarget",
+        "build_log": "out\\mcp_build.log",
+        "flash_log": "out\\mcp_flash.log"
+      },
+      "actions": {
+        "reset": {
+          "command": ["python", "scripts\\reset.py"],
+          "cwd": "C:\\path\\to\\keil-project"
+        }
+      },
+      "scanner": {
+        "command": ["C:\\Program Files\\Open ModScan\\omodscan.exe"],
+        "cwd": "C:\\Program Files\\Open ModScan"
+      },
+      "serial": {
+        "port": "COM<N>",
+        "baudrate": 115200,
+        "timeout_ms": 3000
+      }
+    },
+    {
+      "device_id": "demo-esp-idf",
+      "framework": "esp-idf",
+      "esp_idf": {
+        "project_root": "C:\\path\\to\\esp-idf-project",
+        "idf_py": "idf.py"
+      },
+      "actions": {
+        "test": {
+          "command": ["python", "-m", "pytest"],
+          "cwd": "C:\\path\\to\\esp-idf-project"
+        },
+        "reset": {
+          "command": ["python", "tools\\reset_device.py", "--port", "COM<N>"],
+          "cwd": "C:\\path\\to\\esp-idf-project"
+        }
+      },
+      "serial": {
+        "port": "COM<N>",
+        "baudrate": 115200,
+        "timeout_ms": 3000
+      }
+    }
+  ]
+}

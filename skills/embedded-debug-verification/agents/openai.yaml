@@ -1,0 +1,4 @@
+interface:
+  display_name: "Embedded Debug Verification"
+  short_description: "Root-cause debug and evidence gates for embedded work."
+  default_prompt: "Use $embedded-debug-verification to debug an embedded failure with one-variable evidence and verify completion."

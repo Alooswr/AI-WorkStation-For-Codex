@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "snapshot_kind": "sanitized-private-backup",
+  "copied_skills": [
+    "banner-design",
+    "design",
+    "design-system",
+    "easyeda-api",
+    "embedded-daily-maintenance",
+    "embedded-debug-verification",
+    "embedded-project-closeout",
+    "embedded-skill-router",
+    "esp-idf-workflow",
+    "hatch-pet",
+    "jlc-eda-design",
+    "keil-rebuild-debug",
+    "lvgl-workflow",
+    "mf-serial-hmi",
+    "oh-story-codex",
+    "playwright",
+    "pua",
+    "ux-writing"
+  ],
+  "managed_or_license_unresolved_skills": [
+    "brand",
+    "codex-primary-runtime",
+    "design-taste-frontend",
+    "design-with-uiverse-animejs",
+    "direct-product-design",
+    "gpt-taste",
+    "impeccable",
+    "ui-styling",
+    "ui-ux-pro-max",
+    "system-managed and plugin-cache skills"
+  ],
+  "copied_mcp_sources": [
+    "engineering-memory",
+    "firmware"
+  ],
+  "inventory_only_mcp_entries": [
+    "cua_repl",
+    "motionsites",
+    "node_repl",
+    "openaiDeveloperDocs"
+  ]
+}
